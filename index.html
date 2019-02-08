@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<header>
+		<img src="bg-color.jpg" class="baner"  alt="">
+		<a href="" class="logo"><img src="html5.png"  alt=""></a>
+		<nav>
+			<ul>
+				<li><a href="#" class="active">about</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">about</a></li>
+			</ul>
+		</nav>
+	</header>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script>
+  	$(window).scroll(function(){
+  		var scrolll = $(window).scrollTop();
+  		if (scrolll > 0){
+  			$('header').addClass('scrolled');
+  		}
+  		else {
+  			$('header').removeClass('scrolled');
+  		}
+  	});
+  </script>
+</body>
+</html>
